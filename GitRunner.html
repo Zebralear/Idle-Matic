@@ -5,14 +5,16 @@
 <body>
  <input type="text" id="input">
  <button id="goButton" onClick="(go)">Go To GitRaw</button>
+ <p id="output"></p>
 </body>
 <script>
  function go() {
-  var stringifiedURL = JSON.stringify(document.getElementById("input"))
-  var gitReplace = stringifiedURL.contains("github")
-  var blobRemove = stringifiedURL.contains("blob")
-  if gitReplace="true"&blobRemove="true"
-    then
-   var newString = stringifiedURL.replace("github", "gitraw") & stringifiedURL.replace("/blob/m", "/m")
+  var stringifiedURL = JSON.stringify(document.getElementById("input"));
+  var gitReplace = stringifiedURL.contains("github");
+  var blobRemove = stringifiedURL.contains("blob");
+  if gitReplace="true"&blobRemove="true";
+    then;
+    var newString = stringifiedURL.replace("github", "gitraw") & stringifiedURL.replace("/blob/m", "/m");
+  document.getElementById("output").innerHTML = newString;
  }
 </script>
