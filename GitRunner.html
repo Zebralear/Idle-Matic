@@ -12,7 +12,7 @@
   var stringifiedURL = JSON.stringify(document.getElementById("input"));
   var gitReplace = stringifiedURL.contains("github");
   var blobRemove = stringifiedURL.contains("blob");
-  if gitReplace="true"&blobRemove="true";
+  if gitReplace="true" & blobRemove="true";
     then;
     var newString = stringifiedURL.replace("github", "gitraw") & stringifiedURL.replace("/blob/m", "/m");
   document.getElementById("output").innerHTML = newString;
