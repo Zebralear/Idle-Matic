@@ -3,5 +3,6 @@
 <title>GitHub Runner</title>
 </head>
 <body>
-
-  
+<input id="input" type="text">
+<button type="button" onClick(f.start)  
+</body>
