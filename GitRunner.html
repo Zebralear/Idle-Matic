@@ -9,12 +9,15 @@
 </body>
 <script>
  function go() {
-  var stringifiedURL = JSON.stringify(document.getElementById("input"));
-  var gitReplace = stringifiedURL.contains("github");
-  var blobRemove = stringifiedURL.contains("blob");
-  if (gitReplace="true" & blobRemove="true") {
-    var newString = stringifiedURL.replace("github", "gitraw") & stringifiedURL.replace("/blob/m", "/m");
-  }
-  document.getElementById("output").innerHTML = newString;
+ try {
+  var inputText = document.getElementById("input").value;
+  var outputText = inputElement.replace("github", "rawgit");
+  var finalOutput = outputText.replace("/blob", "/");
+  document.getElementById("output").innerHTML = finalOutput;
+     }
+  catch(err) {
+    document.getElementById("output").innerHTML = err.message;
+             }
  }
+ 
 </script>
