@@ -5,7 +5,7 @@ function outputTimer() {
 }
   
 function RNG() {
-  var output = new Math.floor((Math.random()*10)+1);
+  var output = new Math.floor((Math.random()*100)+1);
 }
 
 function debug() {
@@ -13,7 +13,7 @@ function debug() {
 }
 
 function outputDeterminer() {
-  if (output!=1) {
+  if (output != 1) {
     var currentStone= currentStone + 1;
     }
   document.getElementById("visibleOutput").innerHTML = "currentStone";
