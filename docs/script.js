@@ -1,5 +1,5 @@
 function mining() {
-  document.getElementById("output").innerHTML = "mining works";
+  $("#div1").load("demo_test.txt");
 }
 function explorer() {
   document.getElementById("output").innerHTML = "explorer works";
