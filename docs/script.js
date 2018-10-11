@@ -1,5 +1,5 @@
 function mining() {
-  $("#loadPlacer").load("mining.html");
+  $("#classPlacer").load("miningButtons.html");
 }
 function explorer() {
   document.getElementById("output").innerHTML = "explorer works";
