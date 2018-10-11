@@ -5,7 +5,7 @@ function outputTimer() {
 }
   
 function RNG() {
-  var output= new Math.floor((Math.random()*10)+1);
+  var output = new Math.floor((Math.random()*10)+1);
 }
 
 function debug() {
