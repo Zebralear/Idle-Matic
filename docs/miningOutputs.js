@@ -1,7 +1,7 @@
 function outputTimer() {
-  window.setInterval(RNG(), 100);
-  window.setInterval(debug(), 100);
-  window.setInterval(outputDeterminer(), 100);  
+  window.setInterval(RNG, 100);
+  window.setInterval(debug, 100);
+  window.setInterval(outputDeterminer, 100);  
 }
   
 function RNG() {
