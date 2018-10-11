@@ -1,3 +1,3 @@
 function drillLoad() {
-  $("#classInternalPlace").load("miningDrillInternal.html");
+  $("#classInternalPlacer").load("miningDrillInternal.html");
 }
