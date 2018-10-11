@@ -16,4 +16,5 @@ function outputDeterminer() {
   if (output!=1) {
     var currentStone= currentStone + 1;
     }
+  document.getElementById("visibleOutput").innerHTML = "currentStone";
 }
