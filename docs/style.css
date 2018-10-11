@@ -7,3 +7,9 @@ div {
 div#mining {
     column-span: one;
 }
+div#inventor {
+    column-span: one;
+}
+div#explorer {
+    column-span: one;
+}
