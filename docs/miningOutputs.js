@@ -1,10 +1,10 @@
 function outputTimer() {
-  window.setInterval(RNG, 100);
+  window.setInterval(randomNumberGenerator, 100);
   window.setInterval(debug, 100);
   window.setInterval(outputDeterminer, 100);  
 }
   
-function RNG() {
+function randomNumberGenerator() {
   var output = new Math.floor((Math.random()*100)+1);
 }
 
