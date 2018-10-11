@@ -1,6 +1,9 @@
 body {
     background-color: lightblue;
 }
-#button {
-    text-color: green;
+div {
+    column-count: 3;
+}
+div#mining {
+    column-span: one;
 }
