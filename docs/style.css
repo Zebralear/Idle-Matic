@@ -1,7 +1,7 @@
 body {
     background-color: lightblue;
 }
-div {
+div#choices {
     column-count: 3;
 }
 div#mining {
