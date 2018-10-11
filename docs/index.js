@@ -1,5 +1,5 @@
 function mining() {
-  $("#classPlacer").load("miningButtons.html");
+  $("#classPlacer").load("miningTabControl.html");
 }
 function explorer() {
   document.getElementById("output").innerHTML = "explorer works";
