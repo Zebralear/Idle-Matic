@@ -1,7 +1,7 @@
 function outputTimer() {
   window.setInterval(outputDebug, 100);
   window.setInterval(outputDeterminer, 100);  
-}e
+}
 
 function outputDeterminer() {
   var output = Math.floor((Math.random()*100)+1);
