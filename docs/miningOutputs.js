@@ -1,10 +1,11 @@
 function outputTimer() {
-  window.setInterval(outputDebug, 100);
-  window.setInterval(outputDeterminer, 100);
+  object.setInterval(outputDebug(), 100);
+  object.setInterval(outputDeterminer(), 100);
   var currentStone= 0;
 }
 
 function outputDeterminer() {
+  this.interval = this.setinterval(outputDeterminer(), 1000);
   var output = Math.floor((Math.random()*100)+1);
   if (output != 1) {
     var currentStone = currentStone + 1;
