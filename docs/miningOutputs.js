@@ -11,3 +11,8 @@ function outputDeterminer() {
   //document.getElementById("visibleOutput").innerHTML = currentStone;
   document.getElementById("debugOutput").innerHTML = output;
 }
+
+window.onload = function() {
+ var currentStone=0;
+}
+  
