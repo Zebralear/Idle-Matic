@@ -13,3 +13,7 @@ div#inventor {
 div#explorer {
     column-span: one;
 }
+div#choices {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
