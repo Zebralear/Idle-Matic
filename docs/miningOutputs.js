@@ -4,7 +4,6 @@ function outputTimer() {
 }
 
 function outputDeterminer() {
-  this.interval = this.setinterval(outputDeterminer(), 1000);
   var output = Math.floor((Math.random()*100)+1);
   if (output != 1) {
     var currentStone = currentStone + 1;
