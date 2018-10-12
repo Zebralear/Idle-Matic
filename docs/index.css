@@ -5,13 +5,13 @@ div#choices {
     column-count: 3;
 }
 div#mining {
-    column-span: one;
+    column-span: 1;
 }
 div#inventor {
-    column-span: one;
+    column-span: 1;
 }
 div#explorer {
-    column-span: one;
+    column-span: 1;
 }
 div#choices {
     padding-top: 10px;
