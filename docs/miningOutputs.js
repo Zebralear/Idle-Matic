@@ -9,12 +9,12 @@ function randomNumberGenerator() {
 }
 
 function outputDebug() {
-  document.getElementById("debugOutput").innerHTML = "output";
+  document.getElementById("debugOutput").innerHTML = output;
 }
 
 function outputDeterminer() {
   if (output != 1) {
     var currentStone = currentStone + 1;
     }
-  document.getElementById("visibleOutput").innerHTML = "currentStone";
+  document.getElementById("visibleOutput").innerHTML = currentStone;
 }
