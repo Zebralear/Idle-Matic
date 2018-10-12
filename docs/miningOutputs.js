@@ -1,6 +1,7 @@
 function outputTimer() {
   window.setInterval(outputDebug, 100);
-  window.setInterval(outputDeterminer, 100);  
+  window.setInterval(outputDeterminer, 100);
+  var currentStone= 0;
 }
 
 function outputDeterminer() {
