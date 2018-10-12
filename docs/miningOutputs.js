@@ -14,6 +14,6 @@ function outputDeterminer() {
 }
 
 window.onload = function() {
- var currentStone=0;
+ var currentStone = 0;
 }
   
