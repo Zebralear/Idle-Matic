@@ -2,4 +2,5 @@ div#miningMenu {
     column-count: 3;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: green;
 }
