@@ -5,6 +5,9 @@ function outputTimer() {
 }
 
 function outputDeterminer() {
+  if (currentStone == "undefined") {
+    var currentStone = 0;
+  }
   var output = Math.floor((Math.random()*100)+1);
   if (output != 1) {
     var currentStone = currentStone + 1;
@@ -12,8 +15,3 @@ function outputDeterminer() {
   document.getElementById("visibleOutput").innerHTML = currentStone;
   document.getElementById("debugOutput").innerHTML = output;
 }
-
-window.onload = function() {
- var currentStone = 0;
-}
-  
