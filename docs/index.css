@@ -6,20 +6,14 @@ div#choices {
 }
 button#mining {
     column-span: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: cyan;
 }
 button#inventor {
     column-span: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: cyan;
 }
 button#explorer {
     column-span: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: cyan;
 }
 div#choices {
