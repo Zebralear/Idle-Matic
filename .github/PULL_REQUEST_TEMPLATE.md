@@ -1,5 +1,5 @@
 # Pull Requests
-I am very grateful if any knowledgable persons who wish to contribute or help fix my mistakes, if you find a bug report and identify the problem, please, send me a pull request with a file titled "FIXED.md" with the following contents.
+I am very grateful of any knowledgable persons who wish to contribute or help fix my mistakes, if you find a bug report and identify the problem, please, send me a pull request with a file titled "FIXED.md" with the following contents.
 
 ### ------- FILE CONTENTS -------
 Issue Report Number: _#_ [if applicable, link optional but perferred]  
