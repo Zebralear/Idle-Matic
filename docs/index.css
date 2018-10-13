@@ -4,14 +4,23 @@ body {
 div#choices {
     column-count: 3;
 }
-div#mining {
+button#mining {
     column-span: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: cyan;
 }
-div#inventor {
+button#inventor {
     column-span: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: cyan;
 }
-div#explorer {
+button#explorer {
     column-span: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: cyan;
 }
 div#choices {
     padding-top: 10px;
