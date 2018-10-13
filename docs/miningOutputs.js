@@ -1,6 +1,7 @@
 function outputTimer() {
   object.setInterval(outputDebug(), 100);
   object.setInterval(outputDeterminer(), 100);
+  document.getElementById("debugTimerOutput").innerHTML = "output timer is functioning";
 }
 
 function outputDeterminer() {
