@@ -1,5 +1,6 @@
 function mining() {
   $("#classPlacer").load("miningTabControl.html");
+  var loadedPage = 1
 }
 function explorer() {
   document.getElementById("output").innerHTML = "explorer works";
