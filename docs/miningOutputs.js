@@ -13,6 +13,6 @@ function outputDeterminer() {
     currentStone = currentStone + 1;
                    }
          }
-  document.getElementById("visibleOutput").innerHTML = var currentStone;
+  document.getElementById("visibleOutput").innerHTML = currentStone;
   document.getElementById("debugOutput").innerHTML = output;
 }
