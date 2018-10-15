@@ -1,6 +1,7 @@
 function outputLoad() {
   var output = 0;
   var currentStone = 0;
+}
 
 function outputTimer() {
   window.setInterval(outputDebug(), 100);
