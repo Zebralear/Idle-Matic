@@ -14,7 +14,7 @@ button#inventor {
 }
 button#explorer {
     column-span: 1;
-    background-color: cyan;
+    background-color: red;
 }
 div#choices {
     padding-top: 10px;
@@ -26,4 +26,5 @@ h1#title {
 div#classPlacer {
     padding-top: 10px;
     padding-top: 10px;
+    background-color: orange;
 }
