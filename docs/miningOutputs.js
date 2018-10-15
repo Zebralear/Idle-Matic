@@ -5,7 +5,7 @@ function outputTimer() {
 }
 
 function outputDeterminer() {
-  if (var currentStone !== undefined) {
+  if (currentStone !== "undefined") {
     var currentStone = 0;
   } else {
   var output = Math.floor((Math.random()*100)+1);
