@@ -26,7 +26,7 @@ h1#title {
     padding-botom: 10px;
 }
 div#classPlacer {
-    padding-top: 10px;
-    padding-top: 10px;
-    background-color: orange;
+    padding-top: 0px;
+    padding-top: 0px;
+    display: none;
 }
