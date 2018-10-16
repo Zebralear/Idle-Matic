@@ -10,7 +10,7 @@ function outputTimer() {
 }
 
 function outputDeterminer() {
-  output = Math.floor((Math.random()*100)+1);
+  var output = Math.floor((Math.random()*100)+1);
   if (output != 1) {
     currentStone = currentStone + 1;
   }
