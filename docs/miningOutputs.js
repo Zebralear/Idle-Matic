@@ -11,7 +11,7 @@ function outputTimer() {
 function outputDeterminer() {
   var output = new Math.floor((Math.random()*100)+1);
   if (output != 1) {
-   var currentStone = currentStone + 1;
+   var currentStone = this.currentStone + 1;
   }
   document.getElementById("visibleOutput").innerHTML = this.currentStone;
   document.getElementById("debugOutput").innerHTML = output;
