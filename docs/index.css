@@ -6,11 +6,11 @@ div#choices {
 }
 button#mining {
     column-span: 1;
-    background-color: cyan;
+    background-color: red;
 }
 button#inventor {
     column-span: 1;
-    background-color: cyan;
+    background-color: red;
 }
 button#explorer {
     column-span: 1;
@@ -19,6 +19,7 @@ button#explorer {
 div#choices {
     padding-top: 10px;
     padding-bottom: 10px;
+    backgtound-color: orange;
 }
 h1#title {
     padding-botom: 10px;
