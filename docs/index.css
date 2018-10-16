@@ -3,6 +3,7 @@ body {
 }
 div#choices {
     column-count: 3;
+    background-color: orange:
 }
 button#mining {
     column-span: 1;
