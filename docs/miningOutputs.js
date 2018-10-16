@@ -4,8 +4,7 @@ function outputLoad() {
 }
 
 function outputTimer() {
-  window.setInterval(outputDebug(), 100);
-  window.setInterval(outputDeterminer(), 100);
+  setInterval(outputDeterminer, 100);
   document.getElementById("debugTimerOutput").innerHTML = "output timer is functioning";
 }
 
