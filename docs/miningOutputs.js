@@ -1,7 +1,5 @@
-function outputLoad() {
-  var output = 0;
-  var currentStone = 0;
-}
+var output = 0;
+var currentStone = 0;
 
 function outputTimer() {
   setInterval(outputDeterminer, 100);
@@ -9,9 +7,9 @@ function outputTimer() {
 }
 
 function outputDeterminer() {
-  var output = new Math.floor((Math.random()*100)+1);
+  output = new Math.floor((Math.random()*100)+1);
   if (output != 1) {
-   var currentStone = new currentStone + 1;
+   currentStone = new currentStone + 1;
   }
   document.getElementById("visibleOutput").innerHTML = window.currentStone;
   document.getElementById("debugOutput").innerHTML = window.output;
