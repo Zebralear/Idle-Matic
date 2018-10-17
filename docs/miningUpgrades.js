@@ -1,14 +1,13 @@
-function varSet() {
-  var drillNumber = 1;
-  var drillSpeed = 1;
-  var drillRarity = 1;
-  var drillDoubleDrops= 0;
-  var unlockedSpeed = 0;
-  var unlockedRarity = 0;
-  var unlockedDoubleDrops = 0;
-  var dropsPerSecond = 1;
-  var money = 100000000;
-}
+var drillNumber = 1;
+var drillSpeed = 1;
+var drillRarity = 1; 
+var drillDoubleDrops= 0;
+var unlockedSpeed = 0;
+var unlockedRarity = 0;
+var unlockedDoubleDrops = 0;
+var dropsPerSecond = 1;
+var money = 100000000;
+local
 
 function buyExtra() {
   if (money >= 1000*drillNumber) {
