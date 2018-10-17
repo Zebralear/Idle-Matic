@@ -8,7 +8,7 @@ function outputTimer() {
 
 function outputDeterminer() {
   output = new Math.floor((Math.random()*100)+1);
-  if (output != 1) {
+  if (output !== 1) {
    currentStone = new currentStone + 1;
   }
   document.getElementById("visibleOutput").innerHTML = window.currentStone;
