@@ -5,15 +5,15 @@ var drillDoubleDrops= 0;
 var unlockedSpeed = 0;
 var unlockedRarity = 0;
 var unlockedDoubleDrops = 0;
-var dropsPerSecond = 1;
 var money = 100000000;
-local
+localStorage.setItem(currentDrills, drillNumber);
+localStorage.setItem(drillSpeed, drillSpeed);
+localStorage.setItem(dropsPerSecond, drillNumber*(drillSpeed+1));
 
 function buyExtra() {
   if (money >= 1000*drillNumber) {
-    drillNumber = drillNumber + 1;
+    ++ drillNumber
     money = money-(1000*(drillNumber-1));
-    dropsPerSecond = drillNumber*(drillSpeed+1);
   }
   if (drillNumber == 2) {
     unlockedSpeed = 1;
