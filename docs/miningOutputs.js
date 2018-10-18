@@ -1,9 +1,5 @@
-localStorage.setItem(stone, 100);
-if (localStorage.getItem(stone) === "null") {
-  var currentStone = 0;
-} else {
-  var currentStone = localStorage.getItem(stone);
-}
+var currentStone = localStorage.setItem(stone, 100);
+
 var dropRate = localStorage.getItem(dropsPerSecond);
 
 function outputTimer() {
