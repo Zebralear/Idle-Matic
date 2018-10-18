@@ -1,23 +1,7 @@
 #upgradeHolder {
   column-count: 2;
 }
-#extraDrillOne {
-  display: none;
-  column-span: 1;
-}
-#extraDrillTwo {
-  display: none;
-  column-span: 1;
-}
 #drillSpeed {
-  display: none;
-  column-span: 1;
-}
-#drillSpeedOne {
-  display: none;
-  column-span: 1;
-}
-#drillSpeedTwo {
   display: none;
   column-span: 1;
 }
@@ -25,23 +9,7 @@
   display: none;
   column-span: 1;
 }
-#drillRareLootOne {
-  display: none;
-  column-span: 1;
-}
-#drillRareLootTwo {
-  display: none;
-  column-span: 1;
-}
 #drillDoubleLoot {
-  display: none;
-  column-span: 1;
-}
-#drillDoubleLootOne {
-  display: none;
-  column-span: 1;
-}
-#drillDoubleLootTwo {
   display: none;
   column-span: 1;
 }
