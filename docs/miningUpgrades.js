@@ -6,8 +6,6 @@ var unlockedSpeed = 0;
 var unlockedRarity = 0;
 var unlockedDoubleDrops = 0;
 var money = 100000000;
-localStorage.setItem(currentDrills, drillNumber);
-localStorage.setItem(drillSpeed, drillSpeed);
 localStorage.setItem(dropsPerSecond, drillNumber*(drillSpeed+1));
 
 function buyExtra() {
@@ -18,8 +16,7 @@ function buyExtra() {
   if (drillNumber == 2) {
     unlockedSpeed = 1;
     document.getElementById("drillSpeedUpgrades").style.display = "block";
-    }
-  
+    }  
 }
 
 function buySpeed() {
