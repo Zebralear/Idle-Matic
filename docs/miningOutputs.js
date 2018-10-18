@@ -1,5 +1,5 @@
 localStorage.setItem(stone, 100);
-if (localStorage.getItem(stone) == NaN) {
+if (localStorage.getItem(stone) === null) {
   var currentStone = 0;
 } else {
   var currentStone = localStorage.getItem(stone);
