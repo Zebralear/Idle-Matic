@@ -9,7 +9,6 @@ var dropRate = localStorage.getItem(dropsPerSecond);
 function outputTimer() {
   setInterval(outputDeterminer, 5000);
   document.getElementById("debugTimerOutput").innerHTML = "output timer is functioning";
-  localStorage.setItem(stone, currentStone);
 }
 
 function outputDeterminer() {
