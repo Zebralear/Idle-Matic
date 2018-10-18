@@ -1,6 +1,9 @@
 localStorage.setItem(stone, 100);
-var currentStone = 0;
-var currentStone = localStorage.getItem(stone);
+if (localStorage.getItem(stone) == NaN) {
+  var currentStone = 0;
+} else {
+  var currentStone = localStorage.getItem(stone);
+}
 var dropRate = localStorage.getItem(dropsPerSecond);
 
 function outputTimer() {
