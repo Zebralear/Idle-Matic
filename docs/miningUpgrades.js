@@ -17,6 +17,8 @@ function buyExtra() {
     unlockedSpeed = 1;
     document.getElementById("drillSpeedUpgrades").style.display = "block";
     }  
+  document.getElementById("drillTracker").innerHTML = drillNumber;
+  document.getElementById("moneyTracker").innerHTML = money;
 }
 
 function buySpeed() {
