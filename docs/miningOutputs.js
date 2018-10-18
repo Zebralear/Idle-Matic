@@ -1,4 +1,5 @@
-var currentStone = localStorage.setItem(stone, 100);
+localStorage.setItem(stone, 100);
+var currentStone = localStorage.getItem(stone);
 
 var dropRate = localStorage.getItem(dropsPerSecond);
 
