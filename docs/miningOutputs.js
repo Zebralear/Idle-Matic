@@ -6,7 +6,7 @@ window.onload(stoneGetter) {
 }
 
 function outputTimer() {
-  setInterval(outputDeterminer, 10000/dropRate+1);
+  setInterval(outputDeterminer, 10000-dropRate);
   document.getElementById("debugTimerOutput").innerHTML = "output timer is functioning";
 }
 
