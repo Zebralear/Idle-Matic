@@ -16,7 +16,7 @@ function buyExtra() {
   }
   if (drillNumber == 2) {
     unlockedSpeed = 1;
-    localStorage.setItem(unlockedSpeed, unlockedSpeed);
+    localStorage.setItem(unlockedSpeed, 1);
     document.getElementById("drillSpeed").style.display = "block";
     }  
   document.getElementById("drillTracker").innerHTML = drillNumber;
@@ -24,5 +24,4 @@ function buyExtra() {
 }
 
 function buySpeed() {
-  
 }
