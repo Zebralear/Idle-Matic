@@ -14,11 +14,11 @@ function buyExtra() {
     money = money-(1000*(drillNumber-1));
     localStorage.setItem(drillNumber, drillNumber);
   }
-  if (drillNumber == 2) {
+  //if (drillNumber == 2) {
     unlockedSpeed = 1;
     localStorage.setItem(unlockedSpeed, 1);
     document.getElementById("drillSpeed").style.display = "block";
-    }  
+ //   }  
   document.getElementById("drillTracker").innerHTML = drillNumber;
   document.getElementById("moneyTracker").innerHTML = money;
 }
