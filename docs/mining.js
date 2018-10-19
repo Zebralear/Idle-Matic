@@ -4,5 +4,5 @@ function drillLoad() {
 }
 function miningUpgradeLoad() {
   $("#classInternalPlacer").load("miningUpgradeInternal.html");
-  document.getElementById("classInternalPlacer").style.backgroundImage = "radial-gradient(circle, 7B9095, CACCCE)";
+  document.getElementById("classInternalPlacer").style.backgroundColor = "radial-gradient(circle, 7B9095, CACCCE)";
 }
