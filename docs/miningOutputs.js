@@ -9,7 +9,7 @@ function outputTimer() {
 }
 
 function outputDeterminer() {
-   ++ currentStone
+   ++ currentStone;
   document.getElementById("visibleOutput").innerHTML = currentStone;
   localStorage.setItem(stone, currentStone);
 }
