@@ -1,4 +1,4 @@
-localStorage.setItem(stone, 100);
+window.localStorage.setItem(stone, 100);
 var currentStone = localStorage.getItem(stone);
 document.getElementById("lSDebugger").innerHTML = localStorage.getItem(stone);
 var dropRate = localStorage.getItem(dropsPerSecond);
