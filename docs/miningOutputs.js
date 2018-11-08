@@ -1,14 +1,14 @@
 var changeLog = "Changeset 0.0.";
-var changeLogger = "38";
+var changeLogger = "39";
 
 document.getElementById("changeLog").innerHTML = changeLog + changeLogger;
 window.onLoad = function() {storageSetter()};
-document.getElementById("lSDebugger").innerHTML = localStorage.getItem(stone);
 var dropRate = localStorage.getItem(dropsPerSecond);
                  
 function storageSetter() {
   window.localStorage.setItem(stone, 100);
   var currentStone = localStorage.getItem(stone);
+  document.getElementById("lSDebugger").innerHTML = localStorage.getItem(stone);
 }
 
 function outputTimer() {
