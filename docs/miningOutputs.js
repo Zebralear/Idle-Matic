@@ -1,4 +1,4 @@
-var changeLog = "Change Notifier";
+var changeLog = "Changeset 0.0.";
 var changeLogger = "37";
 
 document.getElementById("changeLog").innerHTML = changeLog + changeLogger;
