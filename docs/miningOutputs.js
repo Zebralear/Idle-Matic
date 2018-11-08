@@ -1,3 +1,8 @@
+var changeLog = "Change Notifier";
+var changeLogger = "37";
+
+document.getElementById("changeLog").innerHTML = changeLog + changeLogger;
+
 window.localStorage.setItem(stone, 100);
 var currentStone = localStorage.getItem(stone);
 document.getElementById("lSDebugger").innerHTML = localStorage.getItem(stone);
