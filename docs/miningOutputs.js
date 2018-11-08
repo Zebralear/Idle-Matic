@@ -1,5 +1,5 @@
 var changeLog = "Changeset 0.0.";
-var changeLogger = "37";
+var changeLogger = "38";
 
 document.getElementById("changeLog").innerHTML = changeLog + changeLogger;
 window.onLoad = function() {storageSetter()};
