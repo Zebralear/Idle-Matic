@@ -7,16 +7,19 @@ var unlockedRarity = 0;
 var unlockedDoubleDrops = 0;
 var money = 100000000;
 
+
 localStorage.setItem(dropsPerSecond, drillNumber*(drillSpeed+1));
+
+// Changelog
+var changeLogStart = "Active Changeset 0.0.";
+var changeLogEnd = "4";
+
+// Runs the function "loadSet" on page load
 window.onLoad = function() {loadSet()};
-
-
 
 // Responsible for shit being done when the page loads.
 function loadSet() {
   document.getElementById("drillTracker").innerHTML = drillNumber;
-  var changeLogStart = "Active Changeset 0.0.";
-  var changeLogEnd = "4";
   document.getElementById("changeLog").innerHTML = changeLogStart + changeLogEnd;
 }
 
