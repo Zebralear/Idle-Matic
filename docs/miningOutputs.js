@@ -3,6 +3,7 @@ var changeLog = "Active Changeset 0.0.";
 var changeLogger = "40";
 
 // Does stuff
+document.cookie = "stone=currentStone";
 localStorage.setItem(stone, 100);
 document.getElementById("changeLog").innerHTML = changeLog + changeLogger;
 window.onLoad = function() {storageSetter()};
