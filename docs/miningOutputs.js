@@ -1,5 +1,5 @@
 // Changelog
-var changeLog = "Changeset 0.0.";
+var changeLog = "Active Changeset 0.0.";
 var changeLogger = "40";
 
 // Does stuff
