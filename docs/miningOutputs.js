@@ -1,10 +1,14 @@
 // Changelog
-var changeLog = "Active Changeset 0.0.";
-var changeLogger = "41";
+var txt = "Active Changeset ";
+var majorAPI = "0";
+var minorChange = "0";
+var patch = "42";
+var fullMajor = majorAPI + ".";
+var fullMinor = minorChange + ".";
 
 // Does stuff
 localStorage.setItem(stone, 100);
-document.getElementById("changeLog").innerHTML = changeLog + changeLogger;
+document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 var dropRate = localStorage.getItem(dropsPerSecond);
 document.getElementById("lSDebugger").innerHTML = localStorage.getItem(stone);
 window.setInterval(outputDeterminer, 5000);
