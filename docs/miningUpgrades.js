@@ -11,8 +11,12 @@ var money = 100000000;
 localStorage.setItem(dropsPerSecond, drillNumber*(drillSpeed+1));
 
 // Changelog
-var changeLogStart = "Active Changeset 0.0.";
-var changeLogEnd = "4";
+var txt = "Active Changeset";
+var majorAPI = "0";
+var minorFeature = "0";
+var patch = "4";
+var fullAPI = majorAPI + ".";
+var fullFeature = minorFeature + ".";
 
 // Runs the function "loadSet" on page load
 window.onLoad = function() {loadSet()};
@@ -20,7 +24,7 @@ window.onLoad = function() {loadSet()};
 // Responsible for shit being done when the page loads.
 function loadSet() {
   document.getElementById("drillTracker").innerHTML = drillNumber;
-  document.getElementById("changeLog").innerHTML = changeLogStart + changeLogEnd;
+  document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
 }
 
 // Responsible for the extra drills being suddenly created from nothing.
