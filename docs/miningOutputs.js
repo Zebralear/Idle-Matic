@@ -13,15 +13,9 @@ document.getElementById("lSDebugger").innerHTML = localStorage.getItem(stone);
 window.setInterval(outputDeterminer, 5000);
 document.getElementById("debugTimerOutput").innerHTML = "output timer is functioning";
 
-/* Sets the output interval */
-function outputTimer() {
-  setInterval(outputDeterminer, 5000);
-  document.getElementById("debugTimerOutput").innerHTML = "output timer is functioning";
-}
-
-/* Actually does the outputing */
+/* Does the outputs */
 function outputDeterminer() {
   ++currentStone
   document.getElementById("visibleOutput").innerHTML = currentStone;
-  localStorage.setItem(stone, currentStone);
+  //localStorage.setItem(stone, currentStone);
 }
