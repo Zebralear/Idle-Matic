@@ -9,7 +9,7 @@ var currentStone = 0;
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
 /* Does stuff */
-setInterval(outputDeterminer, 5000);
+window.setInterval(outputDeterminer, 5000);
 
 
 /* Does the outputs */
