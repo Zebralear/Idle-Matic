@@ -26,7 +26,6 @@ function lSetter() {
 
 /* lSGetter */
 function lSGetter() {
-  localStorage.getItem(stone);
-  currentStone = stone;
-  document.getElementById("visibleOutput").innerHTML = currentStone
+  currentStone = localStorage.getItem(stone);
+  document.getElementById("visibleOutput").innerHTML = currentStone;
 }
