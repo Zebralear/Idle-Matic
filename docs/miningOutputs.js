@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "50";
+var patch = "51";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 var currentStone = 0;
