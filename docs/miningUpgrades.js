@@ -17,6 +17,7 @@ var minorFeature = "0";
 var patch = "4";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
+document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
 
 // Runs the function "loadSet" on page load
 window.onLoad = function() {loadSet()};
@@ -24,14 +25,13 @@ window.onLoad = function() {loadSet()};
 // Responsible for shit being done when the page loads.
 function loadSet() {
   document.getElementById("drillTracker").innerHTML = drillNumber;
-  document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
 }
 
 // Responsible for the extra drills being suddenly created from nothing.
 function buyExtra() {
   if (money >= 1000*drillNumber) {
+    money = money-(1000*drillNumber);
     ++ drillNumber;
-    money = money-(1000*( -- drillNumber));
     localStorage.setItem(drillNumber, drillNumber);
   }
   if (drillNumber == 2) {
