@@ -8,7 +8,7 @@ var unlockedDoubleDrops = 0;
 var money = 100000000;
 
 
-localStorage.setItem(dropsPerSecond, drillNumber*(drillSpeed+1));
+localStorage.setItem(dropsPerSecond, (drillNumber*(drillSpeed+1)));
 
 // Changelog
 var txt = "Active Changeset";
@@ -19,13 +19,8 @@ var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
 
-// Runs the function "loadSet" on page load
-window.onLoad = function() {loadSet()};
-
 // Responsible for shit being done when the page loads.
-function loadSet() {
-  document.getElementById("drillTracker").innerHTML = drillNumber;
-}
+  document.getElementById("drillTracker").innerHTML = localStorage.getItem(drillNumber);
 
 // Responsible for the extra drills being suddenly created from nothing.
 function buyExtra() {
@@ -40,6 +35,7 @@ function buyExtra() {
     document.getElementById("drillSpeed").style.display = "block";
   }  
   document.getElementById("drillTracker").innerHTML = drillNumber;
+  localStorage.setItem(Drills, drillNumber);
   document.getElementById("moneyTracker").innerHTML = money;
 }
 // Responsible for the space-time anomalies that dilate time around your drills.
