@@ -2,7 +2,7 @@
 var txt = "Active Changeset";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "7";
+var patch = "8";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
@@ -19,10 +19,20 @@ var unlockedDoubleDrops = 0;
 var money = 100000000;
 
 
-localStorage.setItem(dropsPerSecond, (drillNumber*(drillSpeed+1)));
-
 /* Responsible for shit being done when the page loads. */
-  document.getElementById("drillTracker").innerHTML = localStorage.getItem("drills");
+document.getElementById("drillTracker").innerHTML = localStorage.getItem("drills");
+localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
+
+function getDrillNumber() {
+  document.getElementById("uOutput").innerHTML = localStorage.getItem("drills");
+}
+
+function getDPS() {
+  document.getElementByIs("uOutput").innerHTML = localStoage.getItem("dropsPerSecond");
+}
+
+
+
 
 /* Responsible for the extra drills being suddenly created from nothing. */
 function buyExtra() {
