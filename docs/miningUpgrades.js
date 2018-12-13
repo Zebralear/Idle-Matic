@@ -2,7 +2,7 @@
 var txt = "Active Changeset";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "8";
+var patch = "9";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
@@ -23,11 +23,11 @@ var money = 100000000;
 localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
 
 function getDrillNumber() {
-  document.getElementById("uOutput").innerHTML = localStorage.getItem("drills");
+  document.getElementById("uOutput").innerHTML = localStorage.drills;
 }
 
 function getDPS() {
-  document.getElementByIs("uOutput").innerHTML = localStoage.getItem("dropsPerSecond");
+  document.getElementByIs("uOutput").innerHTML = localStoage.dropsPerSecond;
 }
 
 
