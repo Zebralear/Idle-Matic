@@ -2,9 +2,10 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "53";
+var patch = "54";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
+var currentStone = 0
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
 window.onLoad("lSGetter");
