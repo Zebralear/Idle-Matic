@@ -21,17 +21,10 @@ localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
 
 function drillCounter() {
   if (typeof(Storage) !== "undefined") {
-    if (localStorage.drillCount) {
-      localStorage.drillCount = Number(localStorage.drillCount)+1;
-    } else {
-      localStorage.drillCount = 1;
-    }
+    if (localStorage.drillCount) {localStorage.drillCount = Number(localStorage.drillCount)+1;}
+    else {localStorage.drillCount = 1;}
     document.getElementById("uOutput").innerHTML = localStorage.drillCCount;
   }
-}
-
-function getDrillNumber() {
-  document.getElementById("uOutput").innerHTML = localStorage.drills;
 }
 
 function getDPS() {
