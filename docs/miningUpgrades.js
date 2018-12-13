@@ -2,7 +2,7 @@
 var txt = "Active Changeset";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "11";
+var patch = "12";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = txt + fullAPI + fullFeature + patch;
