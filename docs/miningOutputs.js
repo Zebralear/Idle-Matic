@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "59";
+var patch = "60";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -19,7 +19,7 @@ function outputDeterminer() {
 }
 
 /* Dynamic Definer for currentStone */
-function clickCounter() {
+function stoneDefiner() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.stone) {
       localStorage.stone = Number(localStorage.stone)+1;
