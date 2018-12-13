@@ -27,7 +27,7 @@ function buyExtra() {
   if (money >= 1000*drillNumber) {
     money = money-(1000*drillNumber);
     ++ drillNumber;
-    localStorage.setItem(drillNumber, drillNumber);
+    localStorage.setItem(drills, drillNumber);
     document.getElementById("moneyTracker").innerHTML = money;
   }
   if (drillNumber == 2) {
@@ -36,7 +36,6 @@ function buyExtra() {
     document.getElementById("drillSpeed").style.display = "block";
   }  
   document.getElementById("drillTracker").innerHTML = drillNumber;
-  localStorage.setItem(Drills, drillNumber);
 }
 // Responsible for the space-time anomalies that dilate time around your drills.
 function buySpeed() {
