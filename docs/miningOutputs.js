@@ -9,7 +9,7 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 
 /* Does stuff */
 window.onLoad("stoneDefiner");
-window.onLoad("lSGetter");
+window.onLoad("lsDebugger");
 window.setInterval(outputDeterminer, 5000);
 
 /* Dynamic Definer for currentStone */
