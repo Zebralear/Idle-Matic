@@ -2,7 +2,7 @@
 var txt = "Active Changeset";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "10";
+var patch = "11";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = txt + fullAPI + fullFeature + patch;
@@ -13,9 +13,6 @@ var drillNumber = 0;
 var drillSpeed = 1;
 var drillRarity = 1; 
 var drillDoubleDrops= 0;
-var unlockedSpeed = 0;
-var unlockedRarity = 0;
-var unlockedDoubleDrops = 0;
 var money = 100000000;
 
 
@@ -39,7 +36,6 @@ function buyExtra() {
     document.getElementById("moneyTracker").innerHTML = money;
   }
   if (drillNumber == 2) {
-    unlockedSpeed = 1;
     localStorage.setItem("unlockedSpeed", 1);
     document.getElementById("drillSpeed").style.display = "block";
   }  
