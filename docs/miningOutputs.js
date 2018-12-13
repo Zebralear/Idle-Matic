@@ -7,7 +7,7 @@ var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
-window.onLoad(lSGetter)
+window.onLoad(lSGetter);
 
 /* Does stuff */
 window.setInterval(outputDeterminer, 5000);
