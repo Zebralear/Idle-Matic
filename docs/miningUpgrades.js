@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "12";
+var patch = "13";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = txt + fullAPI + fullFeature + patch;
@@ -23,7 +23,7 @@ function drillCounter() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.drillCount) {localStorage.drillCount = Number(localStorage.drillCount)+1;}
     else {localStorage.drillCount = 1;}
-    document.getElementById("uOutput").innerHTML = localStorage.drillCCount;
+    document.getElementById("uOutput").innerHTML = localStorage.drillCount;
   }
 }
 
