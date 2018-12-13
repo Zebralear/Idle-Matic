@@ -1,0 +1,9 @@
+function [functionName]() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.[lSItem]) {
+      localStorage.[lSItem] = Number(localStorage.[lSItem]) [etc.];
+    } else {
+      localStorage.[lSItem] = 1;
+    }
+    document.getElementById("[ID]").innerHTML =  + localStorage.[lSItem] [etc.]
+  }
