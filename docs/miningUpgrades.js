@@ -14,7 +14,7 @@ localStorage.setItem(dropsPerSecond, (drillNumber*(drillSpeed+1)));
 var txt = "Active Changeset";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "4";
+var patch = "5";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
@@ -28,6 +28,7 @@ function buyExtra() {
     money = money-(1000*drillNumber);
     ++ drillNumber;
     localStorage.setItem(drillNumber, drillNumber);
+    document.getElementById("moneyTracker").innerHTML = money;
   }
   if (drillNumber == 2) {
     unlockedSpeed = 1;
@@ -36,7 +37,6 @@ function buyExtra() {
   }  
   document.getElementById("drillTracker").innerHTML = drillNumber;
   localStorage.setItem(Drills, drillNumber);
-  document.getElementById("moneyTracker").innerHTML = money;
 }
 // Responsible for the space-time anomalies that dilate time around your drills.
 function buySpeed() {
