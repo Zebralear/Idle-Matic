@@ -20,7 +20,6 @@ var money = 100000000;
 
 
 /* Responsible for shit being done when the page loads. */
-document.getElementById("drillTracker").innerHTML = localStorage.getItem("drills");
 localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
 
 function getDrillNumber() {
