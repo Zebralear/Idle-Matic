@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "58";
+var patch = "59";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -19,10 +19,22 @@ function outputDeterminer() {
 }
 
 /* Dynamic Definer for currentStone */
-function stoneDefiner() {
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.stone) {
+      localStorage.stone = Number(localStorage.stone)+1;
+    } else {
+      localStorage.stone = 1;
+    }
+    document.getElementById("visibleOutput").innerHTML = localStorage.stone;
+  }
+}
+
+
+/*function stoneDefiner() {
   if (typeof(Storage !== "undefined") {
       currentStone = localStorage.getItem("stone");
-} else { currentStone = 0; }}
+} else { currentStone = 0; }}*/
       
 /* lSetter */
 function lSetter() {
