@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "55";
+var patch = "56";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 var currentStone = 0
@@ -27,5 +27,5 @@ function lSetter() {
 /* lSGetter */
 function lSGetter() {
   currentStone = localStorage.getItem("stone");
-  document.getElementById("visibleOutput").innerHTML = currentStone;
+  document.getElementById("visibleOutput").innerHTML = localStorage.getItem("stone");
 }
