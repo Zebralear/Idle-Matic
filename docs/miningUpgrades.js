@@ -1,4 +1,4 @@
-var drillNumber = localStorage.getItem(drillNumber);
+var drillNumber = 0;
 var drillSpeed = 1;
 var drillRarity = 1; 
 var drillDoubleDrops= 0;
@@ -14,7 +14,7 @@ localStorage.setItem(dropsPerSecond, (drillNumber*(drillSpeed+1)));
 var txt = "Active Changeset";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "5";
+var patch = "6";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = fullAPI + fullFeature + patch;
