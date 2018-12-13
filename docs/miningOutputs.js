@@ -10,7 +10,8 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 /* Does stuff */
 window.onLoad("stoneDefiner");
 window.onLoad("lsDebugger");
-window.setInterval(outputDeterminer, 5000);
+window.setInterval(outputDeterminer, timer);
+var timer = 5000-(100*localStorage.drills)
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
