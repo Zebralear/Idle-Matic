@@ -8,7 +8,6 @@ var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
 /* Does stuff */
-window.onLoad("stoneDefiner");
 window.setInterval(stoneDefiner, 5000);
 
 /* Dynamic Definer for currentStone */
