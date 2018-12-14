@@ -36,10 +36,10 @@ function buyExtra() {
       }
       document.getElementById("moneyTracker").innerHTML = money;
     }
-  /*if (localstorage.drills == 2) {
-    localStorage.setItem("unlockedSpeed", 1);
-    document.getElementById("drillSpeed").style.display = "block";
-  }  */
+    if (localstorage.drills == 2) {
+      localStorage.setItem("unlockedSpeed", 1);
+      document.getElementById("drillSpeed").style.display = "block";
+  }
   document.getElementById("drillTracker").innerHTML = localStorage.drillCount;
 }
 /* Responsible for the space-time anomalies that dilate time around your drills. */
