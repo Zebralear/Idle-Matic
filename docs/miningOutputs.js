@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "64";
+var patch = "65";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -22,15 +22,11 @@ function stoneDefiner() {
       localStorage.stone = 1;
     }
     document.getElementById("visibleOutput").innerHTML = localStorage.stone;
+    document.getElementById("uOutput").innerHTML = localStorage.getItem("stone");
   }
 }
 
 
-
-/* Does the outputs */
-function outputDeterminer() {
-  document.getElementById("visibleOutput").innerHTML = ++localStorage.stone;
-}
 
 /* lsDebugger */
 function lsDebugger() {
