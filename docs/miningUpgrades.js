@@ -18,10 +18,11 @@ var money = 100000000;
 
 /* Responsible for shit being done when the page loads. */
 localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
+localStorage.setItem("localStorage", 0)
 
 function drillCounter() {
   if (typeof(Storage) !== "undefined") {
-    if (localStorage.drillCount) {localStorage.drillCount = Number(localStorage.drillCount)+1;}
+   if (localStorage.drillCount) {localStorage.drillCount = Number(localStorage.drillCount)+1;}
     else {localStorage.drillCount = 1;}
     document.getElementById("uOutput").innerHTML = localStorage.drillCount;
   }
