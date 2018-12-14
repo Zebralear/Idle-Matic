@@ -9,7 +9,6 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 
 /* Does stuff */
 window.onLoad("stoneDefiner");
-window.onLoad("lsDebugger");
 window.setInterval(stoneDefiner, 5000);
 window.setInterval(specialDropper, 5000);
 
