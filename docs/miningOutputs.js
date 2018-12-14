@@ -22,7 +22,7 @@ function stoneDefiner() {
       localStorage.stone = 1;
     }
     document.getElementById("visibleOutput").innerHTML = localStorage.stone;
-    document.getElementById("uOutput").innerHTML = localStorage.stone;
+   // document.getElementById("uOutput").innerHTML = localStorage.stone;
   }
 }
 
