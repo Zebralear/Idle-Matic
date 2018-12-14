@@ -20,12 +20,8 @@ var money = 100000000;
 localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
 
 
-    document.getElementById("visibleOutput").innerHTML = localStorage.drills;
-  }
-}
-
 function getDPS() {
-  document.getElementByIs("uOutput").innerHTML = localStoage.dropsPerSecond;
+  document.getElementByIs("uOutput").innerHTML = localStoage.getItem("dropsPerSecond");
 }
 
 /* Responsible for the extra drills being suddenly created from nothing. */
