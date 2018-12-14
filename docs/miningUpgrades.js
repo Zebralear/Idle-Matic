@@ -21,7 +21,7 @@ localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
 
 
 function getDPS() {
-  document.getElementByIs("uOutput").innerHTML = localStoage.getItem("dropsPerSecond");
+  document.getElementById("uOutput").innerHTML = localStoage.getItem("dropsPerSecond");
 }
 
 /* Responsible for the extra drills being suddenly created from nothing. */
