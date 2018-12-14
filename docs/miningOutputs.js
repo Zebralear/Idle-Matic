@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "65";
+var patch = "66";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -11,7 +11,6 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 window.onLoad("stoneDefiner");
 window.onLoad("lsDebugger");
 window.setInterval(outputDeterminer, 5000);
-var timer = 5000-(100*localStorage.drills);
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
@@ -22,7 +21,7 @@ function stoneDefiner() {
       localStorage.stone = 1;
     }
     document.getElementById("visibleOutput").innerHTML = localStorage.stone;
-    document.getElementById("uOutput").innerHTML = localStorage.getItem("stone");
+    document.getElementById("uOutput").innerHTML = localStorage.stone;
   }
 }
 
