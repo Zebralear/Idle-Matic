@@ -12,7 +12,6 @@ window.onLoad("stoneDefiner");
 window.onLoad("lsDebugger");
 window.setInterval(stoneDefiner, 5000);
 window.setInterval(specialDropper, 5000);
-localStorage.setItem("stone", 1);
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
