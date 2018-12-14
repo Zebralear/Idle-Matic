@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "0";
-var patch = "63";
+var patch = "64";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -10,7 +10,7 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 /* Does stuff */
 window.onLoad("stoneDefiner");
 window.onLoad("lsDebugger");
-window.setInterval(outputDeterminer, timer);
+window.setInterval(outputDeterminer, 5000);
 var timer = 5000-(100*localStorage.drills);
 
 /* Dynamic Definer for currentStone */
