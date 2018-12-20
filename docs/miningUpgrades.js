@@ -26,7 +26,7 @@ function getDPS() {
 function buyExtra() {
   if (money >= 1000*localStorage.drills) {
     money = money-(1000*localStorage.drills);
-      if (localStorage.drills ==! "undefined") {
+      if (localStorage.drills !== "undefined") {
         localStorage.drills = Number(localStorage.drills)+1;
       } else {
         localStorage.drills = 1;
