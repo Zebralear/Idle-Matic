@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorFeature = "0";
-var patch = "18";
+var patch = "19";
 var fullAPI = majorAPI + ".";
 var fullFeature = minorFeature + ".";
 document.getElementById("changeLog").innerHTML = txt + fullAPI + fullFeature + patch;
@@ -26,7 +26,7 @@ function getDPS() {
 function buyExtra() {
   if (money >= 1000*localStorage.drills) {
     money = money-(1000*localStorage.drills);
-      if (localStorage.drills) {
+      if (localStorage.drills ==! "undefined") {
         localStorage.drills = Number(localStorage.drills)+1;
       } else {
         localStorage.drills = 1;
