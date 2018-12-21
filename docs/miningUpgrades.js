@@ -17,7 +17,9 @@ var money = 100000000;
 
 
 /* Responsible for shit being done when the page loads. */
-localStorage.setItem("dropsPerSecond", (drillNumber*(drillSpeed+1)));
+localStorage.setItem("DPS", (drillNumber*(drillSpeed+1)));
+
+/* Debug Helper for the Drops Per Second */
 function getDPS() {
   document.getElementById("uOutput").innerHTML = localStoage.getItem("dropsPerSecond");
 }
