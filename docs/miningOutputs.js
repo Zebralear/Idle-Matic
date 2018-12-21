@@ -8,8 +8,8 @@ var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
 /* Does stuff */
-var stoneInterval = document.setInterval(stoneDefiner, 5000);
-document.setInterval(dropTimer, 1000);
+var stoneInterval = window.setInterval(stoneDefiner, 5000);
+window.setInterval(dropTimer, 1000);
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
