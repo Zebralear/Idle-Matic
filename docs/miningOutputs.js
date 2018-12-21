@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "1";
-var patch = "3";
+var patch = "4";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -27,7 +27,7 @@ function stoneDefiner() {
 /* Tells specialDropper when to Drop Things */
   function dropTimer() {
     var dropCheck = Math.floor((Math.random() * 100) + 1);
-    if (this.dropCheck = 100) {
+    if (dropCheck = 100) {
       return specialDropper();
     }
   }
