@@ -8,7 +8,8 @@ var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
 /* Does stuff */
-this.setInterval(stoneDefiner, localStorage.DPS);
+var stoneInterval = this.setInterval(stoneDefiner, 5000);
+this.setInterval(dropTimer, 1000)
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
@@ -22,7 +23,13 @@ function stoneDefiner() {
     document.getElementById("uOutput").innerHTML = localStorage.getItem("stone");
   }
 }
+
+/* Tells specialDropper when to Drop Things */
+  function dropTimer {
+
+  }
+  
 /* Special, Shiny Loot Dropper */
-function specialDropper() {
+  function specialDropper() {
 }
   
