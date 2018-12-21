@@ -16,7 +16,7 @@ function stoneDefiner() {
     if (localStorage.stone) {
       localStorage.stone = Number(localStorage.stone)+1;
     } else {
-      localStorage.stone = 1
+      localStorage.stone = 1;
     }
     document.getElementById("visibleOutput").innerHTML = localStorage.stone;
     document.getElementById("uOutput").innerHTML = localStorage.getItem("stone");
