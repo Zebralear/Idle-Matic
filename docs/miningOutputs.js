@@ -8,7 +8,7 @@ var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
 
 /* Does stuff */
-this.setInterval(stoneDefiner, 5000);
+this.setInterval(stoneDefiner, localStorage.DPS);
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
