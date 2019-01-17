@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "1";
-var patch = "7";
+var patch = "8";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -10,6 +10,10 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 /* Does stuff */
 var stoneInterval = window.setInterval(stoneDefiner, 5000);
 window.setInterval(dropTimer, 1000);
+
+function preSetStoneButton {
+  localStorage.stone = 1;
+}
 
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
