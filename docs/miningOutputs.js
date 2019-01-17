@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "1";
-var patch = "6";
+var patch = "7";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -14,15 +14,14 @@ window.setInterval(dropTimer, 1000);
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
   if (typeof(Storage) !== "undefined") {
-    if (localStorage.stone) {
       localStorage.stone = Number(localStorage.stone)+1;
     } else {
       localStorage.stone = 1;
     }
     document.getElementById("visibleOutput").innerHTML = localStorage.stone;
     document.getElementById("uOutput").innerHTML = localStorage.getItem("stone");
-  }
 }
+
 
 /* Tells specialDropper when to Drop Things */
   function dropTimer() {
