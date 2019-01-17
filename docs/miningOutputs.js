@@ -2,7 +2,7 @@
 var txt = "Active Changeset ";
 var majorAPI = "0";
 var minorChange = "1";
-var patch = "4";
+var patch = "5";
 var fullMajor = majorAPI + ".";
 var fullMinor = minorChange + ".";
 document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + patch;
@@ -35,6 +35,5 @@ function stoneDefiner() {
 /* Special, Shiny Loot Dropper */
   function specialDropper() {
     document.getElementById("uOutput").innerHTML = "special item dropped!";
-    window.clearInterval(stoneInterval);
 }
   
