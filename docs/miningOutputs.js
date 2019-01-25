@@ -11,16 +11,12 @@ document.getElementById("changeLog").innerHTML = txt + fullMajor + fullMinor + p
 var stoneInterval = window.setInterval(stoneDefiner, 5000);
 window.setInterval(dropTimer, 1000);
 
-function preSetStoneButton {
-  localStorage.stone = 1;
-}
-
 /* Dynamic Definer for currentStone */
 function stoneDefiner() {
-  if (typeof(Storage) !== "undefined") {
+  if (localStorage.stone !== "undefined") {
       localStorage.stone = Number(localStorage.stone)+1;
     } else {
-      localStorage.stone = 1;
+        Number(localStorage.stone) = 1;
     }
     document.getElementById("visibleOutput").innerHTML = localStorage.stone;
     document.getElementById("uOutput").innerHTML = localStorage.getItem("stone");
